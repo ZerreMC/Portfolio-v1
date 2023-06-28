@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Courier Prime', sans-serif;
+    src: url('../fonts/CourierPrime-Regular.ttf') format(truetype);
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Courier Prime Bold', sans-serif;
+    src: url('../fonts/CourierPrime-Bold.ttf') format(truetype);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'GasoekOne', sans-serif;
+    src: url('../fonts/GasoekOne-Regular.ttf') format(truetype);
+    font-weight: 700;
+  }

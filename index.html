@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Sebastian Gutierrez">
+        <link rel="icon" href="Img/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="estilo.css">
+        <title translate="no">Sebastian Gutierrez</title>
+        <link rel='preload' href='./fonts/' crossorigin='anonymous' as='font' type='font/ttf'>
+        <script type="module" src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- NAVEGADOR -->
+        <div class="contenedorHeader">
+            <header>
+                <div class="logo">
+                    <a href="#">SCIRGA</a>
+                  </div>
+                  <nav id="nav" class="responsive">
+                    <ul>
+                      <li><a href="index.html" onclick="seleccionar(); mostrarOcultarMenu()">INICIO</a></li>
+                      <li><a href="Doc/CV Sebastian GL Girona.pdf" download onclick="seleccionar(); mostrarOcultarMenu()">CURRICULUM</a></li>
+                      <li><a href="#footer" onclick="seleccionar(); mostrarOcultarMenu()">CONTACTO</a></li>
+                    </ul>
+                  </nav>
+                  <div id="menu-icon" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+            </header>
+        </div>
+        <!-- CONTENIDO -->
+        <section class="postNavegador">
+            <!-- PRESENTACIÓN -->
+            <section class="fondoPresentacion">
+                <div class="section-content">
+                    <canvas id="matrix" role="presentation"></canvas>
+                    <div class="blurBro"></div>
+                    <div class="presentacion">
+                        <div class="photo">
+                            <img src="/Nueva carpeta/Img/logo.png" alt="">
+                        </div>
+                        <div class="Consola">
+                            <div class="topConsola"></div>
+                            <div class="midConsola">
+                                <p class="texto"> Hola!<br> Bienvenido a mi Portfolio<br>
+                                    Sebastian Gutierrez | Programador Junior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SOBRE MÍ -->
+            <section id="sobreMi">
+                    <div class="fondoDefecto">
+                        <h1>SOBRE MÍ</h1>
+                        <p>Como estudiante de ingeniería de informática, me apasiona la tecnología. Poseo habilidades en SQL, PHP, Bash y la creación de algoritmos utilizando C++. En este momento, estoy enfocado en mi formación en el desarrollo de páginas web y me encuentro trabajando en varios proyectos que están a punto de ser publicados.</p>    
+                    </div>
+            </section>
+            <section id="formacionSkills">
+                <div class="contendorFormacion">
+                    <h1>FORMACIÓN</h1>
+                    <div class="contendorArticulo">
+                        <h2>Ingeniería Informática</h2>
+                        <p>Universidad de Gerona, Politécnica Superior</p>
+                        <p>Girona, Gerona | En curso</p>
+                    </div>
+                    <div class="contendorArticulo">
+                        <h2>Bachillerato técnico</h2>
+                        <p>La Salle</p>
+                        <p>Manlleu, Barcelona | 2019 – 2021</p>
+                    </div>
+                    <div class="contendorArticulo">
+                        <h2>Secundaria</h2>
+                        <p>Sagrats Cors</p>
+                        <p>Torelló, Barcelona | 2015 - 2019</p>
+                    </div>
+                </div>
+                <div class="contendorSoftSkills">
+                    <h1>SOFTSKILLS</h1>
+                    <div class="contenedorGrid">
+                        <div class="softSkill">
+                            <img src="/Nueva carpeta/Img/atencion_al_detalle.png" alt="">
+                            <p>Atención al detalle</p>
+                        </div>
+                        <div class="softSkill">
+                            <img src="/Nueva carpeta/Img/solucion_problemas.png" alt="">
+                            <p>Resolución de problemas</p>
+                        </div>
+                        <div class="softSkill">
+                            <img src="/Nueva carpeta/Img/trabajo_en_equipo.png" alt="">
+                            <p>Trabajo en equipo</p>
+                        </div>
+                        <div class="softSkill">
+                            <img src="/Nueva carpeta/Img/organizado.png" alt="">
+                            <p>Organizador</p>
+                        </div>
+                        <div class="softSkill">
+                            <img src="/Nueva carpeta/Img/creatividad.png" alt="">
+                            <p>Creatividad</p>
+                        </div>
+                        <div class="softSkill">
+                            <img src="/Nueva carpeta/Img/adaptabilidad.png" alt="">
+                            <p>Adaptabilidad</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="proyectos" class="fondoDefecto">
+                <div class="contenedorProyectos">
+                    <h1>PROYECTOS</h1>
+                    <div class="gridProyectos">
+                        <div class="atributo">
+                            <p>Próximamente...</p>
+                        </div>
+                        <div class="atributo">
+                            <p>Próximamente...</p>
+                        </div>
+                        <div class="atributo">
+                            <p>Próximamente...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer id="footer">
+            <div class="contenedorContactos">
+                <div class="item2">
+                    <img src="/Nueva carpeta/Img/github.png" alt="">
+                    <a href="https://github.com/ZerreMC">GitHub/ZerreMC</a>
+                </div>
+                <div class="item2">
+                    <img src="/Nueva carpeta/Img/linkedin.png" alt="LinkedIn">
+                    <a href="https://www.linkedin.com/in/sebastian-j-gutierrez">Linkedin</a>
+                </div>
+                <div class="item2">
+                    <img src="/Nueva carpeta/Img/correos_a_gusto.png" alt="">
+                    <a href="mailto:zerreytug.gll@gmail.com">Enviar correo</a>
+                </div>
+                <div class="copyright">
+                    <p>©2023 - Zerre. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
